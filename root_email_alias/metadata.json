@@ -1,0 +1,60 @@
+{
+  "version": "0.0.1",
+  "recipes": {
+    "root_email_alias": "Sets a root email alias in /etc/aliases"
+  },
+  "maintainer": "Scott W. Bradley",
+  "long_description": "DESCRIPTION\n============\n\nSets the `root` email address to forward to a specified address.\n\nREQUIREMENTS\n============\n\nOnly tested on Fedora, but really not that complex. Should be easily portable to others.\n\nATTRIBUTES\n==========\n\nThe file `attributes/default.rb` contains one attribute: the email address you want root's emails to be sent to.\n\nUSAGE\n=====\n\nEdit `attributes/default.rb` to specify the email address you want root emails to go to, then include the `root_email_alias` recipe.\n\nLICENSE & AUTHOR\n================\n\nAuthor:: Scott W. Bradley (<scottwb@gmail.com>)\nCopyright:: 2011, Scott W. Bradley\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n\n",
+  "attributes": {
+    "root_email_alias/forward_to": {
+      "required": "required",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "default": "yourname@example.com",
+      "type": "string",
+      "recipes": [
+
+      ],
+      "display_name": "Forward to",
+      "description": "Email address to forward root mails to"
+    },
+    "root_email_alias": {
+      "required": "optional",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "hash",
+      "recipes": [
+
+      ],
+      "display_name": "root_email_alias",
+      "description": "Hash of root_email_alias attributes"
+    }
+  },
+  "replacing": {
+  },
+  "dependencies": {
+  },
+  "maintainer_email": "scottwb@gmail.com",
+  "groupings": {
+  },
+  "description": "Sets a root email alias in /etc/aliases",
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "name": "root_email_alias",
+  "providing": {
+  },
+  "platforms": {
+    "fedora": [
+
+    ]
+  },
+  "license": "Apache 2.0"
+}
