@@ -21,7 +21,7 @@ Edit `attributes/default.rb` to specify the email address you want root emails t
 LICENSE & AUTHOR
 ================
 
-Author:: Scott W. Bradley [scottwb@gmail.com]
+Author:: Scott W. Bradley (scottwb@gmail.com)
 
 Copyright 2011, Scott W. Bradley
 
