@@ -22,7 +22,8 @@ LICENSE & AUTHOR
 ================
 
 Author:: Scott W. Bradley (<scottwb@gmail.com>)
-Copyright:: 2011, Scott W. Bradley
+
+Copyright 2011, Scott W. Bradley
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
