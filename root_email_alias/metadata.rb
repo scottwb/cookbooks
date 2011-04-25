@@ -20,5 +20,5 @@ attribute "root_email_alias/forward_to",
   :display_name => "Forward to",
   :description => "Email address to forward root mails to",
   :default => "yourname@example.com",
-  :required => true
+  :required => "required"
 
