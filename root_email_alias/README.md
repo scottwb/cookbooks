@@ -11,12 +11,13 @@ Only tested on Fedora, but really not that complex. Should be easily portable to
 ATTRIBUTES
 ==========
 
-The file `attributes/default.rb` contains one attribute: the email address you want root's emails to be sent to.
+`node[:root_email_alias][:forward_to]` - The email address you want root's emails to be sent to.
 
 USAGE
 =====
 
-Edit `attributes/default.rb` to specify the email address you want root emails to go to, then include the `root_email_alias` recipe.
+    override_attributes(:root_email_alias => {:forward_to => "you@you.com"})
+    run_list('recipe[root_email_alias]')
 
 LICENSE & AUTHOR
 ================
