@@ -22,5 +22,5 @@ bash "set root email forwarding" do
     sed -i -e 's/#\\{0,1\\}root:\\([[:space:]]\\+\\).*/root:\\1#{node[:root_email_alias][:forward_to]}/' /etc/aliases
     newaliases
   EOT
-  not_if "grep -q 'root:\s\+#{node[:root_email_alias][:forward_to]}' /etc/aliases"
+  not_if "grep -q 'root:\\s\\+#{node[:root_email_alias][:forward_to]}' /etc/aliases"
 end
