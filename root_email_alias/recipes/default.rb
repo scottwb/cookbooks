@@ -17,9 +17,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-bash "set_root_alias" do
+bash "set root email forwarding" do
   code <<-EOT
     sed -i -e 's/#\\{0,1\\}root:\\([[:space:]]\\+\\).*/root:\\1#{node[:root_email_alias][:forward_to]}/' /etc/aliases
     newaliases
   EOT
+  not_if "grep -q #{node[:root_email_alias][:forward_to]} /etc/aliases"
 end
