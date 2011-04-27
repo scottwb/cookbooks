@@ -1,5 +1,5 @@
 {
-  "version": "0.0.2",
+  "version": "0.0.3",
   "recipes": {
     "root_email_alias": "Sets a root email alias in /etc/aliases"
   },
