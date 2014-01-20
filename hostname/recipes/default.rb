@@ -27,6 +27,14 @@ template "/etc/hosts" do
   backup false
 end
 
+template "/etc/sysconfig/network" do
+  source "network.erb"
+  owner "root"
+  group "root"
+  mode 0644
+  backup false
+end
+
 execute "Reset Hostname" do
   command "hostname --file /etc/hostname"
   action :nothing
