@@ -8,8 +8,11 @@
 #
 
 packages = [
+  'ack',
+  'screen',
   'traceroute',
   'tcpdump',
+  'wget'
 ]
 
 case node[:platform]
