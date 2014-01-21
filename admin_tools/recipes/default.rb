@@ -16,7 +16,7 @@ packages = [
 ]
 
 case node[:platform]
-when "fedora", "amazon"
+when "fedora", "amazon", "centos"
   packages.each do |pkg|
     package pkg do
       action :install
